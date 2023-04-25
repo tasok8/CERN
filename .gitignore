@@ -1,0 +1,7 @@
+# Ignore logs and outputs folders
+logs/
+outputs/
+.DS_Store
+
+# Ignore .pyc files
+*.pyc
