@@ -26,6 +26,6 @@ with open('outputs/all.csv', "w") as output_file:
                         version = version.replace(".", "", 1)
                         platform = match.group(2)
                         date = re.search(r'\[(.*?)\]', line).group(1)
-                        user_agent = re.search(r'"(.+?)"', line).group(1)
+                        user_agent = re.findall(r'"(.+?)"', line)[2]
                         if 'bot' not in user_agent.lower() and 'spider' not in user_agent.lower() and 'crawl' not in user_agent.lower():
                             writer.writerow([date, version, platform])
