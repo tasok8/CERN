@@ -3,6 +3,8 @@ logs/
 outputs/
 .DS_Store
 .vscode/
+OP
+StringFiller.h
 
 # Ignore .pyc files
 *.pyc
